@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+Poluprecnik: <input type="number" id="poluprecnik">
+Visina: <input type="number" id="visina">
+
+<button onclick="zapremina()">Izracunaj zapreminu</button>
+<p id="zapremina"></p>
+
+<script>
+function zapremina() {
+  
+  const PI = 3.14;
+  
+  const h = document.getElementById("visina").value;
+  const r = document.getElementById("poluprecnik").value;
+  
+  
+  const V = (r^2) * PI * h;
+  
+  
+  document.getElementById("zapremina").innerHTML = "Zapremina = " + V;
+}
+</script>
+
+</body>
+</html>
